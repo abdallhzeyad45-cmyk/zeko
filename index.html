@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عالم شوشو البنفسجي 💜</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap');
+
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Cairo,sans-serif;
+color:white;
+background:radial-gradient(ellipse at top,#54246c,#190d25 55%,#08040d);
+min-height:100vh;
+overflow-x:hidden;
+}
+main{max-width:750px;margin:auto;padding:25px 16px}
+section{display:none;animation:show .6s ease}
+section.active{display:block}
+@keyframes show{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+.hero{text-align:center;padding:55px 10px}
+.moon{font-size:65px;filter:drop-shadow(0 0 20px #d18aff)}
+h1{font-size:45px;color:#f1c5ff;text-shadow:0 0 20px #b65bff}
+h2{text-align:center;color:#edc1ff;font-size:30px}
+p{line-height:2.1;color:#e1d0e9;font-size:17px}
+.card{
+background:linear-gradient(145deg,#351844,#190d24);
+border:1px solid #b96ce966;
+border-radius:23px;padding:23px;margin:20px 0;
+box-shadow:0 10px 35px #0006;
+}
+.btn{
+border:0;border-radius:30px;padding:13px 25px;
+background:linear-gradient(100deg,#873bd1,#d04db8);
+color:white;font:bold 16px Cairo;cursor:pointer;margin:7px;
+}
+.secondary{background:#392544;border:1px solid #b77bd5}
+.center{text-align:center}
+.small{font-size:13px;color:#c2a9d0}
+.gallery,.choices{
+display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
+}
+.memory{
+background:linear-gradient(145deg,#51266a,#21132e);
+border:1px solid #c57af755;border-radius:18px;
+padding:25px 10px;text-align:center;
+}
+.memory b{display:block;font-size:30px}
+.choice{
+background:#281635;border:1px solid #b96ce9;
+border-radius:18px;padding:18px 8px;color:white;
+font:bold 15px Cairo;cursor:pointer;
+}
+.choice span{display:block;font-size:34px;margin-bottom:8px}
+.notice{font-size:13px;color:#d2bedc;border:1px solid #9562aa;padding:12px;border-radius:12px;line-height:2}
+input{width:100%;padding:13px;border-radius:12px;background:#120b19;color:white;border:1px solid #a968c9;font:16px Cairo}
+table{width:100%;border-collapse:collapse}
+td,th{padding:10px;border-bottom:1px solid #714783}
+footer{text-align:center;color:#ad94b9;padding:25px}
+@media(max-width:450px){h1{font-size:36px}.gallery,.choices{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+
+<section id="home" class="active">
+<div class="hero">
+<div class="moon">🌙</div>
+<div class="small">عالم صغير معمول بحب</div>
+<h1>يا شوشو 💜</h1>
+<p>في كلام كتير جوايا حبيت أوصلهولك بهدوء...</p>
+<button class="btn" onclick="go('story')">ادخلي يا شوشو ✨</button>
+</div>
+</section>
+
+<section id="story">
+<h2>إحنا لسه حكاية 💜</h2>
+<div class="card">
+<p>يا شوشو..</p>
+<p>أنا عارف إن الدنيا مش أحسن حاجة معانا، وإن الفترة دي بقت مليانة مشاكل وضغوط، وكل واحد فينا عنده حاجات جواه وتعب مش دايمًا بيعرف يشرحه.</p>
+<p>يمكن بقينا مش بنفهم بعض زي الأول، ويمكن ساعات كلامنا يزعلنا بدل ما يهون علينا. بس مش معنى إننا بنتعب أو بنختلف إن كل حاجة حلوة بينا اختفت.</p>
+<p>إحنا مش لازم نكون كويسين طول الوقت، ولا نفهم بعض من أول مرة. المهم نحاول نسمع بعض ونصبر على بعض، من غير لوم ولا ضغط.</p>
+<p>يمكن الفترة دي صعبة.. بس مش لازم تكون نهاية حكايتنا. ❤️</p>
+</div>
+<div class="center">
+<button class="btn" onclick="go('memories')">كمّلي 💜</button>
+</div>
+</section>
+
+<section id="memories">
+<h2>حاجات حلوة بينا 🌹</h2>
+<p class="center">مش محتاجين صور عشان نفتكر إن كان بينا لحظات غالية.</p>
+<div class="gallery">
+<div class="memory"><b>💜</b>ضحكتنا اللي كانت بتهوّن</div>
+<div class="memory"><b>🌙</b>كلام مكنّاش بنزهق منه</div>
+<div class="memory"><b>✨</b>تفاصيل صغيرة كانت بتفرّحنا</div>
+<div class="memory"><b>🌹</b>أيام لسه ليها مكان في القلب</div>
+</div>
+<div class="card">
+<p>أنا مش بقول إن مفيش زعل، ولا بطلب منك تنسي أي حاجة وجعتك. أنا بس بقول إن اللي بينا يستاهل نفهمه بهدوء، لو إحنا الاتنين عايزين ده.</p>
+</div>
+<div class="center">
+<button class="btn" onclick="go('choices')">عايز أسمع اختيارك 💌</button>
+</div>
+</section>
+
+<section id="choices">
+<h2>تحبي تقوليلي إيه؟ 💌</h2>
+<p class="center">اختاري اللي حاساه بجد. مفيش إجابة غلط، ومش مطلوب منك تختاري حاجة ترضيني.</p>
+<div class="choices">
+<button class="choice" onclick="choose('عايزة نكمل')"><span>💚</span>عايزة نكمل<br>ونحاول نفهم بعض</button>
+<button class="choice" onclick="choose('مش عايزة نكمل')"><span>💔</span>مش عايزة نكمل<br>وده قرار هحترمه</button>
+<button class="choice" onclick="choose('محتاجة وقت أفكر')"><span>⏳</span>محتاجة وقت أفكر</button>
+<button class="choice" onclick="choose('بحبك')"><span>💜</span>بحبك</button>
+<button class="choice" onclick="choose('مبقتش بحبك')"><span>🥀</span>مبقتش بحبك</button>
+</div>
+<div class="notice">
+اختيارك بيتسجل على المتصفح ده فقط في النسخة التجريبية، ومش بيتبعت لزياد على جهاز تاني.
+</div>
+<div class="center">
+<button class="btn secondary" onclick="go('ending')">مش جاهزة أختار دلوقتي</button>
+</div>
+</section>
+
+<section id="ending">
+<div class="hero">
+<div class="moon">💜</div>
+<h2>بحبلك الخير يا شوشو</h2>
+<div class="card">
+<p>مهما كان اختيارك، أنا بتمنالك راحة البال. ولو لسه في رغبة مننا إحنا الاتنين، أتمنى نعرف نصبر على بعض ونتكلم ونفهم بعض من غير ما نجرح بعض.</p>
+<p>مش كل فترة صعبة معناها إن الحكاية انتهت.. بس أي حكاية لازم يكون فيها رضا من الاتنين. ❤️</p>
+<p class="center">من زياد 💜</p>
+</div>
+<button class="btn secondary" onclick="go('home')">ارجعي للبداية</button>
+</div>
+</section>
+
+<section id="admin">
+<h2>الصفحة السرية 🔐</h2>
+<div class="card" id="login">
+<p class="center">الصفحة دي لزياد</p>
+<input id="pass" type="password" placeholder="كلمة السر">
+<div class="center"><button class="btn" onclick="unlock()">دخول</button></div>
+<p class="small center">كلمة السر التجريبية: 2468</p>
+</div>
+<div class="card" id="records" style="display:none">
+<p>الاختيارات المسجلة على نفس المتصفح:</p>
+<div id="recordList"></div>
+</div>
+</section>
+
+<footer>
+صُنع بحب وهدوء • عالم شوشو البنفسجي 💜
+<br>
+<button class="btn secondary" onclick="go('admin')">دخول زياد 🔐</button>
+</footer>
+
+</main>
+
+<script>
+function go(id){
+document.querySelectorAll('main section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function choose(choice){
+let records=JSON.parse(localStorage.getItem('shoshoChoices')||'[]');
+records.push({choice:choice,at:new Date().toLocaleString('ar-EG')});
+localStorage.setItem('shoshoChoices',JSON.stringify(records));
+alert('اختيارك اتسجل على الجهاز ده. شكرًا إنك قلتي اللي حاساه 💜');
+go('ending');
+}
+
+function unlock(){
+if(document.getElementById('pass').value!=='2468'){
+alert('كلمة السر مش صحيحة');return;
+}
+document.getElementById('login').style.display='none';
+document.getElementById('records').style.display='block';
+renderRecords();
+}
+
+function renderRecords(){
+let records=JSON.parse(localStorage.getItem('shoshoChoices')||'[]');
+let el=document.getElementById('recordList');
+if(!records.length){el.innerHTML='<p>لسه مفيش اختيارات.</p>';return;}
+el.innerHTML='<table><tr><th>الاختيار</th><th>التاريخ والوقت</th></tr>'+
+records.slice().reverse().map(r=>'<tr><td>'+r.choice+'</td><td>'+r.at+'</td></tr>').join('')+
+'</table>';
+}
+</script>
+</body>
+</html>
